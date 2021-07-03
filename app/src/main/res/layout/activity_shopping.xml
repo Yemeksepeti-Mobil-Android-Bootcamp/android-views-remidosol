@@ -29,25 +29,25 @@
             <TextView
                 android:id="@+id/headerTextView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_46sdp"
                 android:layout_marginTop="@dimen/_20sdp"
-                android:fontFamily="@font/dm_serif_display_regular"
+                android:fontFamily="@font/poppins_regular"
                 android:lineSpacingExtra="@dimen/_2sdp"
                 android:text="@string/lets_start"
                 android:textAlignment="textStart"
-                android:textColor="@color/black"
+                android:textColor="#2B2B2B"
                 android:textSize="@dimen/_34ssp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:lineHeight="@dimen/_34ssp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/postHeaderTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dm_serif_display_regular"
+                android:fontFamily="@font/poppins_regular"
                 android:lineSpacingExtra="@dimen/_2sdp"
                 android:text="@string/fill_details"
                 android:textAlignment="textStart"
@@ -65,9 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_3sdp"
-                android:fontFamily="@font/dm_serif_display_regular"
+                android:fontFamily="@font/poppins_regular"
                 android:lineSpacingExtra="@dimen/_2sdp"
-                tools:text="Indent Handler"
                 android:textAlignment="textStart"
                 android:textColor="#7A7A7A"
                 android:textSize="@dimen/_14ssp"
@@ -76,7 +75,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/postHeaderTextView"
                 app:layout_constraintTop_toTopOf="parent"
-                app:lineHeight="@dimen/_14ssp" />
+                app:lineHeight="@dimen/_14ssp"
+                tools:text="Indent Handler" />
 
         </LinearLayout>
 
@@ -96,17 +96,17 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/fullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/full_name"
-                app:hintTextColor="@color/text_field_hint"
                 android:textColorHint="@color/text_field_hint"
+                app:boxBackgroundColor="#F0F0F0"
                 app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_14sdp"
                 app:boxCornerRadiusTopEnd="@dimen/_14sdp"
                 app:boxCornerRadiusTopStart="@dimen/_14sdp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:boxBackgroundColor="#F0F0F0">
+                app:hintTextColor="@color/text_field_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/fullNameEditText"
@@ -118,23 +118,23 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:hint="@string/email"
-                app:hintTextColor="@color/text_field_hint"
                 android:textColorHint="@color/text_field_hint"
+                app:boxBackgroundColor="#F0F0F0"
                 app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_14sdp"
                 app:boxCornerRadiusTopEnd="@dimen/_14sdp"
                 app:boxCornerRadiusTopStart="@dimen/_14sdp"
+                app:hintTextColor="@color/text_field_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fullName"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:boxBackgroundColor="#F0F0F0">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEditText"
@@ -146,31 +146,31 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:hint="@string/password"
-                app:hintTextColor="@color/text_field_hint"
                 android:textColorHint="@color/text_field_hint"
+                app:boxBackgroundColor="#F0F0F0"
                 app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_14sdp"
                 app:boxCornerRadiusTopEnd="@dimen/_14sdp"
                 app:boxCornerRadiusTopStart="@dimen/_14sdp"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/text_field_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/email"
-                app:layout_constraintTop_toTopOf="parent"
-                app:endIconMode="password_toggle"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:boxBackgroundColor="#F0F0F0">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/_16ssp"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/_16ssp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -273,12 +273,12 @@
                 android:textAlignment="center"
                 android:textColor="#2B2B2B"
                 android:textSize="@dimen/_13ssp"
-                app:lineHeight="@dimen/_20ssp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/connectWithGoogle"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:lineHeight="@dimen/_20ssp" />
         </LinearLayout>
     </LinearLayout>
 
