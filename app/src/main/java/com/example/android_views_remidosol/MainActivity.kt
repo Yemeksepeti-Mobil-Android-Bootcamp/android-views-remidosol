@@ -29,14 +29,13 @@ class MainActivity : AppCompatActivity() {
     private fun addListeners() {
         shopWomenButton.setOnClickListener {
             Toast.makeText(baseContext, "Shop Women Button", Toast.LENGTH_SHORT).show()
-            navigateToDetail("Shop women")
         }
         shopMenButton.setOnClickListener {
             Toast.makeText(baseContext, "Shop Men Button", Toast.LENGTH_SHORT).show()
-            navigateToDetail("Shop men")
         }
         loginTextView.setOnClickListener {
             Toast.makeText(baseContext, "Login TextView", Toast.LENGTH_SHORT).show()
+            navigateToDetail("Login")
         }
     }
 

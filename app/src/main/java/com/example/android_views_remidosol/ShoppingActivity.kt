@@ -35,9 +35,9 @@ class ShoppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping)
-        initViews()
-        handleIntent(intent)
-        addListeners()
+        this.initViews()
+        this.handleIntent(intent)
+        this.addListeners()
     }
 
     private fun initViews() {

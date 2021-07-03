@@ -10,4 +10,5 @@
     <color name="border">#EFEFF0</color>
     <color name="button_text_color">#252529</color>
     <color name="facebook">#3B5998</color>
+    <color name="text_field_hint">#AEAEB2</color>
 </resources>
