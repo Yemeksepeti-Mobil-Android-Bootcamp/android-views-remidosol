@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">android-views-remidosol</string>
+    <string name="modern_aest">Modern Aesthetic Fashion</string>
+    <string name="bckgr_img">Background Image</string>
+    <string name="pre_href_text">Already have account?</string>
+    <string name="log_in">Log In</string>
+    <string name="shop_women">Shop women</string>
+    <string name="shop_men">Shop men</string>
+    <string name="lets_start">Let’s start here</string>
+    <string name="fill_details">Fill in your details to begin</string>
+    <string name="full_name">Fullname</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="connect_with_facebook">Connect with Facebook</string>
+    <string name="connect_with_google">Connect with Google</string>
+    <string name="terms_of_use">By signing in, I agree with <b>Terms of Use</b><br/> and <b>Privacy Policy</b>.</string>
+</resources>
