@@ -14,5 +14,12 @@ git clone https://github.com/Yemeksepeti-Mobil-Android-Bootcamp/android-views-re
 
 After you clone the repo, open it on Android Studio.
 
+## Screens
+
+<div style="margin: 0 auto;">
+<img src="./public/activity_main_screen.jpg" width="240">
+<img src="./public/activity_shopping_screen.jpg" width="240">
+</div>
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
