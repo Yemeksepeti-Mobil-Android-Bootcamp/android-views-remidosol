@@ -4,15 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.android.material.textfield.TextInputLayout
 
 class ShoppingActivity : AppCompatActivity() {
 
     val TAG = "ShoppingActivity"
+
+    lateinit var backArrowButton: ImageView
 
     lateinit var headerTextView: TextView
     lateinit var postHeaderTextView: TextView
@@ -41,6 +40,7 @@ class ShoppingActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        backArrowButton = findViewById(R.id.backArrowButton)
         headerTextView = findViewById(R.id.headerTextView)
         postHeaderTextView = findViewById(R.id.postHeaderTextView)
         orTextView = findViewById(R.id.orTextView)
@@ -67,6 +67,9 @@ class ShoppingActivity : AppCompatActivity() {
     }
 
     private fun addListeners() {
+        backArrowButton.setOnClickListener {
+            super.onBackPressed()
+        }
         signUpButton.setOnClickListener {
             Toast.makeText(baseContext, "Sign Up Button", Toast.LENGTH_SHORT).show()
         }
